@@ -1,0 +1,150 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+#intro{
+    font-size: 2rem;
+}
+
+p{
+    font-style: italic;
+    font-size: 2rem;  
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    margin-left: 5px;
+}
+
+/*.texto{
+    margin-right: 2rem;
+}*/
+
+#corpo{
+    background:linear-gradient(to left, #3c6093, #0096C7 );
+    font-family: 'Helvetica', 'Times New Roman', Times, sans-serif;
+
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-sec{
+    font-size: 4rem;
+    font-weight: 400;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+/*seção de apresentação*/
+
+#presentation{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', 'Times New Roman', Times, sans-serif;
+}
+
+#presentation h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: white;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+
+
+#presentation .cta{
+    justify-content: space-between;
+    display: inline-block;
+    padding: 10px 30px;
+    color: gold;
+    background-color: transparent;
+    border: 2px solid gold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+}
+
+#presentation .cta:hover{
+    color:white;
+    font-weight: 500;
+    background-color: gold;
+}
+
+#presentation::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/*seção portfólio*/
+
+.projectName{
+    font-size: 3rem;
+}
+
+#foto1{
+    width: 98%;
+    display: flex;
+    margin-left: 1.1rem;
+    border-radius: 2rem;
+}
+
+#foto2{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    margin-left: 1.1rem;
+    border-radius: 2rem;
+}
+
+span{
+    margin-left: 7px;
+}
+
+#texto1{
+    margin-left: 7px;
+}
+
+footer{
+    margin-left: 60%;
+}
+
